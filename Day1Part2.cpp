@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int calculateTotalDistance(vector<int>& leftList, vector<int>& rightList) {
+int similarityScore(vector<int>& leftList, vector<int>& rightList) {
     sort(leftList.begin(), leftList.end());
     sort(rightList.begin(), rightList.end());
 
@@ -42,7 +42,7 @@ int main() {
         }
     }
 
-    int result = calculateTotalDistance(leftList, rightList);
+    int result = similarityScore(leftList, rightList);
 
     cout << "The result is: " << result << endl;
 
