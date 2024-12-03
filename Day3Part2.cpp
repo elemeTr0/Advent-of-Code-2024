@@ -7,11 +7,8 @@ using namespace std;
 
 int main() {
     string filePath = "input.txt";
+    
     ifstream inputFile(filePath);
-    if (!inputFile) {
-        cerr << "Error: Unable to open file " << filePath << endl;
-        return 1;
-    }
 
     string memory((istreambuf_iterator<char>(inputFile)), istreambuf_iterator<char>());
     inputFile.close();
